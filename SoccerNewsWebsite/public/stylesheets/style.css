@@ -1,0 +1,108 @@
+/* Custom Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header, footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --font-family: 'Arial, sans-serif';
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: #333;
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  header, footer {
+    text-align: center;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+title {
+  color: #007bff;
+}
+
+.team {
+  margin-bottom: 2rem;
+}
+
+.team img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.team h2 {
+  margin-top: 0;
+}
+
+.team p {
+  margin-bottom: 0;
+}
+
+backgrond-color {
+  background-color: #0c4e91;
+}
+
+h2 {
+  margin-top: 2rem;
+  color: var(--primary-color);
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+.socials img {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 2rem;
+}

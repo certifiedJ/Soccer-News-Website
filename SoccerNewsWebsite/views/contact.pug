@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1 Contact 
+  p You can contact us at contact@soccerwebsite.com
+  p Our phone number is: (999)-999-999
+  form(action='/submit-question', method='post')
+  label(for='question') Feedbacks/Questions:
+  input(type='text', id='question', name='question', required, placeholder='Enter here')
+  button(type='submit') Submit
+
+  h2 Socials
+  p Stay Connected with Us on Social Media for the Latest Updates
+  .socials
+    a(href='https://www.instagram.com/soccerwebsite4/?hl=en', target='_blank')
+      img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png', alt='Instagram Logo')
+    a(href='https://x.com/soccerwebs84943', target='_blank')
+      img(src='https://upload.wikimedia.org/wikipedia/commons/f/f2/Logo_Twitter.png?20130425191452', alt='Twitter Logo')
+    a(href='https://www.facebook.com/profile.php?id=61566993222423', target='_blank')
+      img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/1200px-Facebook_Logo_2023.png?20231011121526', alt='Facebook Logo')
+    a(href='https://www.linkedin.com/in/soccerwebsite-page-234b47333/', target='_blank')
+      img(src='https://static.vecteezy.com/system/resources/previews/023/986/970/large_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png', alt='LinkedIn Logo')

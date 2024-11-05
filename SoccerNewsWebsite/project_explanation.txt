@@ -1,0 +1,26 @@
+Soccer Website Project
+
+- Overview
+This project is a comprehensive soccer website designed to provide detailed information about soccer teams, players, match schedules, results, news, and articles. 
+
+- Features
+Team and Player Information: Detailed profiles of soccer teams and players.
+Match Schedules and Results: Up-to-date information on upcoming matches and past results.
+News and Articles: Latest news and in-depth articles about soccer.
+
+- Mission
+Our mission is to be the go-to source for soccer enthusiasts by providing accurate and up-to-date information about the sport we all love.
+
+
+- User Interaction
+Users can submit their questions or feedback through the form on the Contact page.   
+Users can click on the social media logos to visit the respective links.
+
+- Technologies Used
+Node.js: Server-side JavaScript runtime.
+Express.js: Web application framework for Node.js.
+Pug: Template engine for generating HTML.
+JavaScript: Client-side scripting for form handling and dynamic content.
+
+Challenges I faced:
+The challenges i faced was the API. It was kinda diffcult for me 

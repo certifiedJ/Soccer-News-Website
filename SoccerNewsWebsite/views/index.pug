@@ -1,0 +1,41 @@
+extends layout
+
+include mixins/card
+
+block content
+  h1= title
+  p Explore the World of the Soccer Website!
+
+  // Popular Soccer Leagues
+  h2 Popular Soccer Leagues
+  each league in ['Premier League', 'La Liga', 'Serie A', 'Bundesliga', 'Ligue 1']
+    +card(league, 'Information about the ' + league)
+
+  // Top Teams
+  h2 Top Teams
+  each team in ['FC Barcelona', 'Real Madrid', 'Manchester United', 'Bayern Munich', 'Juventus']
+    +card(team, 'Information about ' + team)
+
+  // Upcoming Matches
+  h2 Upcoming Matches
+  each match in ['Barcelona vs Real Madrid', 'Manchester United vs Liverpool', 'Bayern Munich vs Borussia Dortmund']
+    +card(maxtch, 'Details about the match are coming soon: ' + match)
+
+    // Matches Goals
+  h2 Matches Goals
+  each teams in ['West Ham vs Ipswich Town (4-1)', 'Aston Villa vs Man United (0-0)', 'Wolves vs Liverpool (1-2)', 'Arsenal vs Southampton (3-1)']
+    if teams.includes('West Ham')
+      +card(teams, 'West Ham won the match!')
+    else if teams.includes('Aston Villa')
+      +card(teams, 'It was a draw between Aston Villa and Man United.')
+    else if teams.includes('Liverpool')
+      +card(teams, 'Liverpool won the match!')
+    else if teams.includes('Arsenal')
+      +card(teams, 'Arsenal won the match!')
+    else
+      +card(teams, 'Match goals for other teams: ')
+
+  // Recent News
+  h2 Recent News
+  each news in ['Messi wins Ballon d\'Or', 'Champions League draw announced', 'Premier League fixtures released']
+    +card(news, 'News: ' + news)
